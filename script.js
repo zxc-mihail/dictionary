@@ -36,7 +36,7 @@ function setData(){
     let words = localStorage.getItem('words').split(',')
     let translations = localStorage.getItem('translations').split(',')
     for (let i = 0; i < words.length; i++){
-        // if (words[i] === '' && translations[i] === '') continue
+        if (words[i] === '' && translations[i] === '') continue
         addWord()
         table.children[1].children[i].children[0].children[0].value = words[i]
         table.children[1].children[i].children[1].children[0].value = translations[i]
