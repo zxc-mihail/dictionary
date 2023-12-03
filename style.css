@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Cypro+Minoan&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    transition: all 0.3s;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    background: rgb(98, 98, 98);
+}
+
+#header > a > div:first-child{
+    font-size: 26px;
+    padding: 10px 0;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+#functions{
+    display: flex;
+    flex-flow: nowrap;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+#functions > div:first-child{
+    margin-right: 15px;    
+}
+
+.function  button{
+    padding: 7px 9px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid grey;
+    /* letter-spacing: 1px; */
+}
+
+#addWord button{
+    background: rgb(130, 255, 130);
+}
+
+#addWord button:hover{
+    background: rgb(39, 255, 39);  
+}
+
+#test button{
+    background: rgb(119, 119, 255);
+}
+
+#test button:hover{
+    background: rgb(96, 96, 255);
+}
+
+main{
+    display: flex;
+    padding: 75px 10px;
+    justify-content: center;
+}
+
+main > table {
+    width: 85vw;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+@media (min-width: 990px){
+    main > table{
+        width: 65%;
+    }
+}
+
+thead>tr>th{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border: 1px solid grey;
+    margin: 0;
+}
+
+thead>tr>th:last-child{
+    width: 20%;
+}
+tbody>tr>td{
+    font-size: 18px;
+    border: 1px solid grey;
+}
+
+tbody > tr > td > input{
+    padding: 7px 0;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    background: #eee;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputs input::-webkit-input-placeholder {
+    color: aliceblue;
+}
+
+tbody > tr > td > button {
+    padding: 3px 5px;
+    border-radius: 3px;
+    background: rgb(255, 160, 160);
+    border: 1px solid;
+}

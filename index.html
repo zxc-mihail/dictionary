@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Словарь</title>
+    <link rel='stylesheet' href="style.css" >
+    <!-- <script src="script.js" defer></script> -->
+</head>
+<body>
+    <header id="header">
+        <a><div>Словарь</div></a>
+        <div id="functions">
+            <div class="function" id="addWord" onclick="addWord()"><button>Добавить слово</button></div>
+            <div class="function" id="test"><a href="test.html"><button>Начать тест</button></a></div>
+        </div>
+    </header>
+    <main>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Слово</th>
+                    <th>Перевод</th>
+                    <th>Удаление</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="Новое слово"></td>
+                    <td><input type="text" placeholder="Перевод"></td>
+                    <td><button onclick="deleteRow(this)" id="htmlButton">Удалить</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel='stylesheet' href="style.css" >
+    <link rel="stylesheet" href="styleForTest.css">
+</head>
+<body>
+    <header id="header">
+        <a href="index.html"><div>Словарь</div></a>
+        <div id="functions">
+            <!-- <div class="function" id="addWord" onclick="addWord()"><button>Добавить слово</button></div> -->
+            <div class="function" id="test" onclick="startTest()"><button>Начать тест</button></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div><h2>Слово</h2></div>
+            <form><p>Выберите правильный перевод:</p>
+                <div id="choise">
+
+                    <div>
+                        <input type="radio" id="contactChoice1" name="answer"  />
+                        <label for="contactChoice1">Первый вариант</label><br>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="contactChoice2" name="answer"  /> 
+                        <label for="contactChoice2">Второй вариант</label> <br>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="contactChoice3" name="answer"  />
+                        <label for="contactChoice3">Третий вариант</label> <br>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="contactChoice4" name="answer"  />
+                        <label for="contactChoice4">Четвертый вариант</label>
+                    </div>
+
+                </div>
+                <div>
+                    <button onclick="nextWord(event)">Далее</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="scriptForTest.js" defer></script>
+</body>
+</html>

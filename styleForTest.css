@@ -1,0 +1,55 @@
+#functions > div:first-child{
+    margin: 0;    
+}
+
+.container{
+    border: 1px solid grey;
+    border-radius: 15px;
+    max-width: 450px;
+    text-align: center;
+    padding: 20px 30px 20px;
+}
+
+.container > div {
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.container > div > h2 {
+    font-weight: 500;
+    letter-spacing: 1px
+}
+
+form {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#choise{
+    text-align: left;
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+#choise > div {
+    margin-bottom: 8px;
+}
+
+#choise > div:last-child{
+    margin: 0;
+}
+
+form > div > button {
+    /* justify-content: end; */
+    padding: 5px 10px;
+    background: rgb(148, 255, 98);
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form > div:last-child{
+    display: flex;
+    justify-content: end;
+}
